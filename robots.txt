@@ -3,8 +3,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://cutedrawingideas.github.io/sitemap.xml
-
 # Google
 User-agent: Googlebot
 Allow: /
