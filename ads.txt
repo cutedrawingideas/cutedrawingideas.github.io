@@ -1,5 +1,1 @@
-# AdSense ads.txt file
-# This file is used by Google AdSense to verify ad inventory
-# Replace PUBLISHER-ID with your actual Google AdSense Publisher ID
 
-google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
