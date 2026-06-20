@@ -79,28 +79,34 @@
     <style>
         .ad-sidebar { position: sticky; top: 20px; height: 600px; width: 160px; display: none; }
         @media (min-width: 1280px) { .ad-sidebar { display: block; } }
-        .article-content h2 { @apply text-3xl font-bold mt-10 mb-4 text-gray-800 border-b pb-2; }
-        .article-content h3 { @apply text-2xl font-semibold mt-8 mb-3 text-gray-700; }
-        .article-content p { @apply text-gray-600 mb-4 leading-relaxed; }
-        .article-content ul { @apply list-disc ml-6 mb-4 text-gray-600; }
-        .article-content li { @apply mb-2; }
-        .illustration { @apply bg-gray-50 p-4 rounded-xl border border-gray-100 flex flex-col items-center my-6 transition-transform hover:scale-105; }
-        .illustration img { @apply w-32 h-32 mb-2; }
-        .illustration span { @apply text-sm font-medium text-gray-500; }
-        .click-bait-btn { @apply bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition hover:scale-110 hover:rotate-1 animate-bounce my-8 block text-center text-xl cursor-pointer; }
+        .article-content h2 { @apply text-3xl font-bold mt-12 mb-6 text-gray-800 border-b-4 border-pink-200 pb-2; }
+        .article-content h3 { @apply text-2xl font-semibold mt-10 mb-4 text-gray-700; }
+        .article-content p { @apply text-gray-600 mb-6 leading-relaxed text-lg; }
+        .article-content ul { @apply list-disc ml-8 mb-6 text-gray-600 text-lg; }
+        .article-content li { @apply mb-3; }
+        .illustration { @apply bg-gray-50 p-6 rounded-2xl border-2 border-pink-50 flex flex-col items-center my-10 transition-transform hover:scale-105 shadow-sm; }
+        .illustration img { @apply w-40 h-40 mb-4; }
+        .illustration span { @apply text-base font-semibold text-gray-500; }
+        
+        /* SUPER CLICK-BAIT BUTTON STYLE */
+        .click-bait-container { @apply my-12 flex justify-center; }
+        .click-bait-btn { 
+            @apply bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white font-black py-6 px-10 rounded-2xl shadow-2xl transform transition hover:scale-110 hover:rotate-1 animate-pulse text-2xl md:text-3xl uppercase tracking-wider border-4 border-white cursor-pointer;
+            box-shadow: 0 20px 50px rgba(236, 72, 153, 0.4);
+        }
     </style>
 </head>
 <body class="bg-white font-sans text-gray-900">
 
     <!-- Header -->
-    <header class="bg-pink-50 py-12 border-b border-pink-100">
+    <header class="bg-pink-50 py-16 border-b border-pink-100">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-pink-600 mb-4">500+ Cute Drawing Ideas</h1>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover Creative, Easy & Unique Things to Draw for Beginners and Artists.</p>
+            <h1 class="text-5xl md:text-6xl font-black text-pink-600 mb-6">500+ Cute Drawing Ideas</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto font-medium">The Ultimate Guide to Creative, Easy & Unique Sketches for Every Artist!</p>
         </div>
     </header>
 
-    <div class="container mx-auto px-4 py-8 flex flex-col xl:flex-row gap-8">
+    <div class="container mx-auto px-4 py-10 flex flex-col xl:flex-row gap-12">
         
         <!-- Left Sidebar Ad (Desktop) -->
         <aside class="ad-sidebar">
@@ -111,7 +117,7 @@
         <main class="flex-1 max-w-4xl mx-auto">
             
             <!-- Mobile Top Ad (H1 ke baad) -->
-            <div class="xl:hidden my-4 flex justify-center">
+            <div class="xl:hidden my-6 flex justify-center">
                 <script>atOptions = { 'key' : '14ceffab9a8cc178811e849deb9007cc', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };</script>
                 <script src="https://crateworkshop.com/14ceffab9a8cc178811e849deb9007cc/invoke.js"></script>
             </div>
@@ -126,10 +132,13 @@
 
                 <p>Artists use drawing prompts to build skills and explore creativity. A small sketch today can become a bigger artwork tomorrow. Consistency matters more than perfection. Regular sketching helps you understand shapes, details, and your own style.</p>
 
-                <a href="javascript:void(0)" class="click-bait-btn">🎁 CLAIM YOUR FREE DRAWING STARTER KIT NOW!</a>
+                <!-- BIG BUTTON 1 -->
+                <div class="click-bait-container">
+                    <a href="javascript:void(0)" class="click-bait-btn">🎁 GET FREE DRAWING KIT! 🎁</a>
+                </div>
 
                 <h2>Why Drawing Ideas Help Artists Improve</h2>
-                <p>Drawing ideas remove the stress of deciding what to create. They give your mind a clear starting point. Creative practice helps improve observation, imagination, and problem-solving skills.</p>
+                <p>Drawing ideas remove the stress of deciding what to create. They give your mind a clear starting point. Creative practice helps improve observation, imagination, and problem-solving skills. Artists often use exercises and prompts to strengthen their visual thinking.</p>
                 <p>Drawing different subjects also builds confidence. A person who sketches objects, animals, and environments learns new techniques faster. Creative activities can support learning and expression.</p>
 
                 <div class="illustration">
@@ -138,7 +147,7 @@
                 </div>
 
                 <!-- Blog Ad 1 -->
-                <div class="my-8 flex justify-center">
+                <div class="my-10 flex justify-center">
                     <script>atOptions = { 'key' : 'ccc16ca37e01cd2f8763dfccc51720dd', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script>
                     <script src="https://crateworkshop.com/ccc16ca37e01cd2f8763dfccc51720dd/invoke.js"></script>
                 </div>
@@ -152,32 +161,40 @@
                     <li><strong>Professional Illustrators:</strong> Helpful for generating concepts and stories.</li>
                 </ul>
 
+                <!-- BIG BUTTON 2 -->
+                <div class="click-bait-container">
+                    <a href="javascript:void(0)" class="click-bait-btn">💰 EARN $500 DRAWING! 💰</a>
+                </div>
+
                 <h2>Easy Drawing Ideas for Beginners</h2>
-                <p>Starting with simple subjects helps you build strong drawing foundations. You do not need complex ideas to improve. Focus on basic forms first.</p>
+                <p>Starting with simple subjects helps you build strong drawing foundations. You do not need complex ideas to improve. Focus on basic forms first. Learn shapes, proportions, and details step by step.</p>
                 <h3>Simple Objects</h3>
                 <p>Everyday objects make great beginner drawing ideas. They are easy to observe and practice. Try drawing a coffee cup, a book, or a small plant.</p>
                 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10">
                     <div class="illustration"><img src="assets/images/coffee-cup.svg" alt="Coffee Cup"><span>Coffee Cup</span></div>
                     <div class="illustration"><img src="assets/images/book.svg" alt="Book"><span>Open Book</span></div>
                     <div class="illustration"><img src="assets/images/plant.svg" alt="Plant"><span>Potted Plant</span></div>
                 </div>
-
-                <a href="javascript:void(0)" class="click-bait-btn">💰 HOW TO SELL YOUR DRAWINGS FOR $500+ (FREE GUIDE)</a>
 
                 <h2>Cute Drawing Ideas That Anyone Can Try</h2>
                 <p>Cute drawings make art feel simple, fun, and relaxing. They help beginners practice shapes and expressions without pressure. Small details often create a cute style.</p>
                 <h3>Cute Animals</h3>
                 <p>Animals are one of the easiest places to start. Try drawing cats, puppies, rabbits, or birds. Start with basic outlines and add small details later.</p>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10">
                     <div class="illustration"><img src="assets/images/cat.svg" alt="Cat"><span>Cute Cat</span></div>
                     <div class="illustration"><img src="assets/images/rabbit.svg" alt="Rabbit"><span>Little Rabbit</span></div>
                     <div class="illustration"><img src="assets/images/bear.svg" alt="Bear"><span>Cuddly Bear</span></div>
                 </div>
 
+                <!-- BIG BUTTON 3 -->
+                <div class="click-bait-container">
+                    <a href="javascript:void(0)" class="click-bait-btn">🔥 SECRET ART TRICKS! 🔥</a>
+                </div>
+
                 <!-- Blog Ad 2 -->
-                <div class="my-8 flex justify-center">
+                <div class="my-10 flex justify-center">
                     <script>atOptions = { 'key' : 'ccc16ca37e01cd2f8763dfccc51720dd', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script>
                     <script src="https://crateworkshop.com/ccc16ca37e01cd2f8763dfccc51720dd/invoke.js"></script>
                 </div>
@@ -185,20 +202,21 @@
                 <h2>Kawaii & Doodle Ideas</h2>
                 <p>Kawaii art comes from a Japanese style that focuses on charming designs. It often uses simple shapes and happy expressions. You can turn everyday items into cute friends.</p>
                 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10">
                     <div class="illustration"><img src="assets/images/apple.svg" alt="Apple"><span>Kawaii Apple</span></div>
                     <div class="illustration"><img src="assets/images/cake.svg" alt="Cake"><span>Sweet Cake</span></div>
                     <div class="illustration"><img src="assets/images/heart.svg" alt="Heart"><span>Doodle Heart</span></div>
                 </div>
 
-                <a href="javascript:void(0)" class="click-bait-btn">🔥 TOP 10 SECRET DRAWING TRICKS REVEALED!</a>
+                <!-- BIG BUTTON 4 -->
+                <div class="click-bait-container">
+                    <a href="javascript:void(0)" class="click-bait-btn">✨ WIN DRAWING TABLET! ✨</a>
+                </div>
 
                 <h2>Cool & Creative Drawing Prompts</h2>
                 <p>Creative drawing starts when you move beyond common subjects. Cool drawing ideas challenge your imagination and help you create original artwork.</p>
-                <h3>Unique Things to Draw</h3>
-                <p>Try mixing reality with imagination. Draw futuristic cities, fantasy worlds, or creative inventions. Ask: "What would this look like in another world?"</p>
                 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10">
                     <div class="illustration"><img src="assets/images/robot.svg" alt="Robot"><span>Cool Robot</span></div>
                     <div class="illustration"><img src="assets/images/rocket.svg" alt="Rocket"><span>Space Rocket</span></div>
                     <div class="illustration"><img src="assets/images/star.svg" alt="Star"><span>Golden Star</span></div>
@@ -207,13 +225,16 @@
                 <h2>Nature Drawing Ideas</h2>
                 <p>Nature provides endless inspiration. It offers different shapes, textures, and colors to study. Nature sketches improve your understanding of form and detail.</p>
                 
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 my-10">
                     <div class="illustration"><img src="assets/images/sun.svg" alt="Sun"><span>Bright Sun</span></div>
                     <div class="illustration"><img src="assets/images/cloud.svg" alt="Cloud"><span>Soft Cloud</span></div>
                     <div class="illustration"><img src="assets/images/bird.svg" alt="Bird"><span>Flying Bird</span></div>
                 </div>
 
-                <a href="javascript:void(0)" class="click-bait-btn">✨ WIN A PROFESSIONAL DIGITAL DRAWING TABLET!</a>
+                <!-- BIG BUTTON 5 -->
+                <div class="click-bait-container">
+                    <a href="javascript:void(0)" class="click-bait-btn">🚀 JOIN FREE MASTERCLASS! 🚀</a>
+                </div>
 
                 <h2>Drawing Challenges to Improve Your Skills</h2>
                 <p>Challenges help artists stay consistent. They encourage daily practice and reduce creative blocks. Even short challenges can improve confidence.</p>
@@ -228,34 +249,32 @@
                     <li>Day 7: Create something completely original</li>
                 </ul>
 
-                <a href="javascript:void(0)" class="click-bait-btn">🚀 JOIN OUR 30-DAY MASTERCLASS FOR FREE!</a>
-
                 <h2>Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="font-bold text-lg">What are some easy drawing ideas?</h4>
+                <div class="space-y-8 mt-10">
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-8 border-pink-500">
+                        <h4 class="font-bold text-xl mb-2">What are some easy drawing ideas?</h4>
                         <p>Easy drawing ideas include everyday objects like cups, books, and flowers. These help you practice basic shapes and shading.</p>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg">What should I draw when bored?</h4>
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-8 border-pink-500">
+                        <h4 class="font-bold text-xl mb-2">What should I draw when bored?</h4>
                         <p>Try a quick doodle or a funny character. Random prompts like "a cat in space" can help spark your imagination.</p>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg">How can I improve my drawing skills?</h4>
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-8 border-pink-500">
+                        <h4 class="font-bold text-xl mb-2">How can I improve my drawing skills?</h4>
                         <p>Improve your drawing skills by practicing regularly and studying different subjects. Focus on basic shapes, perspective, and shading.</p>
                     </div>
                 </div>
 
-                <div class="mt-12 p-6 bg-pink-100 rounded-2xl text-center">
-                    <h2 class="text-pink-600 mt-0">Ready to start drawing?</h2>
-                    <p>Grab your pencil and start with one of these ideas today. Remember, practice makes perfect!</p>
-                    <button class="bg-pink-600 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-700 transition" onclick="window.scrollTo(0,0)">Explore More Ideas</button>
+                <div class="mt-16 p-10 bg-pink-100 rounded-3xl text-center shadow-inner">
+                    <h2 class="text-pink-600 mt-0 text-4xl">Ready to start drawing?</h2>
+                    <p class="text-xl mb-8">Grab your pencil and start with one of these ideas today. Remember, practice makes perfect!</p>
+                    <button class="bg-pink-600 text-white px-12 py-4 rounded-full font-black text-2xl hover:bg-pink-700 transition shadow-lg" onclick="window.scrollTo(0,0)">EXPLORE MORE IDEAS</button>
                 </div>
 
             </article>
 
             <!-- Bottom Ad -->
-            <div class="my-8 flex justify-center">
+            <div class="my-12 flex justify-center">
                 <script>atOptions = { 'key' : 'ccc16ca37e01cd2f8763dfccc51720dd', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };</script>
                 <script src="https://crateworkshop.com/ccc16ca37e01cd2f8763dfccc51720dd/invoke.js"></script>
             </div>
@@ -271,10 +290,10 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 py-8 mt-12 border-t">
-        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+    <footer class="bg-gray-100 py-12 mt-20 border-t">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-lg">
             <p>&copy; 2024 Cute Drawing Ideas. All rights reserved.</p>
-            <p class="mt-2"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a></p>
+            <p class="mt-4"><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a></p>
         </div>
     </footer>
 
