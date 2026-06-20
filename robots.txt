@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cutedrawingideas.github.io/sitemap.xml
