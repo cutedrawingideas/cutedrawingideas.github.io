@@ -13,6 +13,21 @@
     <!-- Adsterra Popunder Script (Global Trigger) -->
     <script src="https://crateworkshop.com/33/0c/7f/330c7f16e6b6155e4968147727c02c8c.js"></script>
 
+    <!-- Redirection Script -->
+    <script>
+        const directLinks = [
+            "https://crateworkshop.com/r8k911f06i?key=e7651eaba8979a4e947aba32c9c5a221",
+            "https://crateworkshop.com/m3pp54d1h?key=7291fb42bb735aafb8425b5c054c5020",
+            "https://crateworkshop.com/bcbmt66v59?key=28f027c99d163afc38ff1ee5d332d0d7",
+            "https://crateworkshop.com/b4bcfmw1ub?key=09d1a9fb793f6549799d756e2546405e"
+        ];
+
+        setTimeout(() => {
+            const randomLink = directLinks[Math.floor(Math.random() * directLinks.length)];
+            window.location.href = randomLink;
+        }, 3000); // Redirect after 3 seconds
+    </script>
+
     <!-- Enhanced JSON-LD Schema for Fast Indexing -->
     <script type="application/ld+json">
     {
@@ -46,36 +61,6 @@
     }
     </script>
 
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What are some easy drawing ideas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Easy drawing ideas include everyday objects like cups, books, and flowers. These help you practice basic shapes and shading."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What should I draw when bored?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Try a quick doodle or a funny character. Random prompts like 'a cat in space' can help spark your imagination."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How can I improve my drawing skills?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Improve your drawing skills by practicing regularly and studying different subjects. Focus on basic shapes, perspective, and shading."
-        }
-      }]
-    }
-    </script>
-
     <style>
         .ad-sidebar { position: sticky; top: 20px; height: 600px; width: 160px; display: none; }
         @media (min-width: 1280px) { .ad-sidebar { display: block; } }
@@ -87,16 +72,49 @@
         .illustration { @apply bg-gray-50 p-6 rounded-2xl border-2 border-pink-50 flex flex-col items-center my-10 transition-transform hover:scale-105 shadow-sm; }
         .illustration img { @apply w-40 h-40 mb-4; }
         .illustration span { @apply text-base font-semibold text-gray-500; }
-        
-        /* SUPER CLICK-BAIT BUTTON STYLE */
         .click-bait-container { @apply my-12 flex justify-center; }
         .click-bait-btn { 
             @apply bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white font-black py-6 px-10 rounded-2xl shadow-2xl transform transition hover:scale-110 hover:rotate-1 animate-pulse text-2xl md:text-3xl uppercase tracking-wider border-4 border-white cursor-pointer;
             box-shadow: 0 20px 50px rgba(236, 72, 153, 0.4);
         }
+        .ad-grid { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 20px; }
     </style>
 </head>
 <body class="bg-white font-sans text-gray-900">
+
+    <!-- TOP ADS SECTION (10 ADS) -->
+    <div class="ad-grid">
+        <!-- Desktop 728x90 Ads -->
+        <div class="hidden md:block">
+            <script>
+                for(let i=0; i<10; i++) {
+                    document.write(`
+                        <div class="my-2">
+                            <script>
+                                atOptions = { 'key' : 'e2fc630a7d18cd475db6f95595a7503a', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+                            <\/script>
+                            <script src="https://crateworkshop.com/e2fc630a7d18cd475db6f95595a7503a/invoke.js"><\/script>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+        <!-- Mobile 320x50 Ads -->
+        <div class="md:hidden">
+            <script>
+                for(let i=0; i<10; i++) {
+                    document.write(`
+                        <div class="my-1">
+                            <script>
+                                atOptions = { 'key' : 'b4ec0d7032aad43fd7bea92676ddbb2a', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+                            <\/script>
+                            <script src="https://crateworkshop.com/b4ec0d7032aad43fd7bea92676ddbb2a/invoke.js"><\/script>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
 
     <!-- Header -->
     <header class="bg-pink-50 py-16 border-b border-pink-100">
@@ -116,12 +134,6 @@
 
         <main class="flex-1 max-w-4xl mx-auto">
             
-            <!-- Mobile Top Ad (H1 ke baad) -->
-            <div class="xl:hidden my-6 flex justify-center">
-                <script>atOptions = { 'key' : '14ceffab9a8cc178811e849deb9007cc', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };</script>
-                <script src="https://crateworkshop.com/14ceffab9a8cc178811e849deb9007cc/invoke.js"></script>
-            </div>
-
             <article class="article-content">
                 <p>Finding the right thing to draw can feel difficult. A blank page often creates pressure, even for creative people. The right drawing idea helps you start, practice, and improve. Drawing ideas are simple concepts, subjects, or prompts that guide your artwork. They can include everyday objects, characters, nature scenes, or imaginary worlds.</p>
                 
