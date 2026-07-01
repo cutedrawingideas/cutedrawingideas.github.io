@@ -1,0 +1,37 @@
+# Cute Drawing Ideas for Website
+
+## Categories & Specific Ideas
+
+### 1. Animals (The Classics)
+- **Elephant:** Small body, big ears, tiny trunk.
+- **Sloth:** Hanging from a branch, very sleepy.
+- **Cow:** Spotted patterns, simple snout.
+- **Panda:** Black circles around eyes, eating bamboo.
+- **Hedgehog:** Spiky back made of simple lines, tiny feet.
+- **Koi Fish:** Flowing fins, simple orange/red spots.
+- **Bee:** Round body, stripes, tiny wings.
+- **Cat in a Planet:** A cat curled up inside a Saturn-like ring.
+- **Turtle:** Round shell with simple hex patterns.
+
+### 2. Kawaii Food & Drinks
+- **Kawaii Fruits:** Watermelon slice with a face, pineapple with sunglasses.
+- **Sweets:** Cupcake with a swirl, ice cream cone with a wink.
+- **Japanese Drinks:** Boba tea with "smiling" pearls, Ramune bottle.
+- **Breakfast:** Toast with a butter heart, egg sunny side up.
+
+### 3. Nature & Plants
+- **Cacti:** Different shapes in small pots (round, tall, flowering).
+- **Wildflowers:** Simple stems with 5-petal flowers.
+- **Succulents:** Layered leaf patterns in a ceramic pot.
+- **Mushrooms:** Red cap with white dots (Fly Agaric style).
+
+### 4. Seasonal & Aesthetic
+- **Autumn:** Fall leaves (maple, oak), tiny pumpkins.
+- **Space:** Stars, crescent moon, tiny rocket ship.
+- **Cozy:** Coffee mug with steam, open book with a tiny heart.
+
+## Design Inspiration
+- **Style:** Minimalist, clean lines, pastel colors.
+- **Layout:** Grid-based or masonry for ideas.
+- **Interactivity:** Hover effects to show "Difficulty Level" or "Tips".
+- **Sections:** Hero, Categories, Featured Idea, Footer.
